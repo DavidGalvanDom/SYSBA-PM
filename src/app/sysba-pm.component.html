@@ -1,12 +1,19 @@
 <md-toolbar color="primary">
+   <button  md-button class="md-icon-button" aria-label="Settings">
+    <md-icon >menu</md-icon>
+  </button>
+
   <span>{{title}}</span>
   
   <!-- This fills the remaining space of the current row -->
   <span class="example-fill-remaining-space"></span>
-  
-  <span>David Galvan</span>
+  <span flex></span>
+  <button md-button class="md-icon-button" aria-label="Favorite">
+    Home
+  </button>
+  <button md-button class="md-icon-button" aria-label="More" (click)="Projecto()">    
+    Projectos
+  </button>
 </md-toolbar>
-<div><br /></div>
-<button md-raised-button color="primary">New Project </button>
 
 <router-outlet></router-outlet>
