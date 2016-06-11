@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { ProjectComponent } from './+project';
-import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
+
 import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
 import { MD_TOOLBAR_DIRECTIVES } from '@angular2-material/toolbar';
 import { Routes, Router, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router';

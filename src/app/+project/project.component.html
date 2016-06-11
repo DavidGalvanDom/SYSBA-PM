@@ -1,5 +1,31 @@
-<p>
-  project works!  que mas quieres 
-</p>
+<section class="sample-app-content" >    
+    <form #f="ngForm" (ngSubmit)="onSubmitTemplateBased()">
+      <div class="card-container">
+        <md-card>     
+          <md-card-title>Usuario</md-card-title>   
+          <md-card-content>
+                <p>
+                  <md-input class="demo-full-width" placeholder="FirstName"  [(ngModel)]="vm.firstName" required>
+                  </md-input>           
+                </p>
+                <p>
+                    <md-input type="password"   class="demo-full-width" placeholder="Password"  [(ngModel)]="vm.password" required>
+                    </md-input>                    
+                </p>
+          </md-card-content>
+          <md-card-actions>
+                <button md-button color="primary" type="submit" [disabled]="!f.valid"> Submit </button>
+              
+          </md-card-actions>
+        </md-card>
+        <md-card>
+          <p>
+            project works!  que mas quieres 
+          </p>
 
-<button md-raised-button color="primary" (click)="onSelect()"> Go Home </button>
+          <button md-raised-button color="primary" (click)="onSelect()"> Go Home </button>
+          <br />
+        </md-card>
+      </div>
+    </form>
+</section>
